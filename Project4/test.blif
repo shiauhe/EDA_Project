@@ -1,0 +1,104 @@
+.model x2
+.inputs a b c d e f g h i j
+.outputs k l m n o p q
+.names j a4
+0 1
+.names h a4 g2
+1- 1
+-1 1
+.names i j h2
+1- 1
+-1 1
+.names i g3
+0 1
+.names g3 a4 i2
+1- 1
+-1 1
+.names h e4
+0 1
+.names a4 i e4 a3
+1-- 1
+-1- 1
+--1 1
+.names h g3 j2
+1- 1
+-1 1
+.names g2 h2 i2 a3 j2 g1
+11111 1
+.names g1 k
+0 1
+.names j e4 f2
+1- 1
+-1 1
+.names g2 f2 j2 i2 h1
+1111 1
+.names h1 l
+0 1
+.names i h j f3
+1-- 1
+-1- 1
+--1 1
+.names f3 m
+0 1
+.names a d4
+0 1
+.names b c4
+0 1
+.names c b4
+0 1
+.names j e4 c2
+1- 1
+-1 1
+.names d4 c4 b4 a3 i2 g2 f3 c2 a1
+11111111 1
+.names a1 n
+0 1
+.names j2 f3 i2 g2 g i1
+11111 1
+.names i1 o
+0 1
+.names d4 c4 e4 c c3
+1111 1
+.names c3 a4 a2
+1- 1
+-1 1
+.names g3 a2 f1
+11 1
+.names g e1
+0 1
+.names i j c d4 c4 b3
+11111 1
+.names e f4
+0 1
+.names a4 f4 d h3
+111 1
+.names b3 h3 d2
+1- 1
+-1 1
+.names d2 h d1
+11 1
+.names e4 f i j c1
+1111 1
+.names f1 e1 d1 c1 p
+1--- 1
+-1-- 1
+--1- 1
+---1 1
+.names f3 a3 g b2
+111 1
+.names b2 b1
+0 1
+.names d e a4 i d3
+1111 1
+.names d4 c4 b4 j e3
+1111 1
+.names d3 e3 e2
+1- 1
+-1 1
+.names e2 h j1
+11 1
+.names b1 c1 j1 q
+1-- 1
+-1- 1
+--1 1
+.end

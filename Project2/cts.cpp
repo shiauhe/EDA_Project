@@ -221,7 +221,6 @@ void connectmid(){
     step++;
     temppoint.clear();
     for(int i=0;i<temp_size;i++){
-
         if(same_pos(m_point,spreadpoint[i])){
             found = true;
             break;
@@ -258,15 +257,14 @@ void connectmid(){
     }
     spreadpoint.assign(temppoint.begin(), temppoint.end());
 
-    // if(step>12)
-    // return t_point;
-    //return spread(step);
     }
+    //cout<<m_point.x<<" mid "<<m_point.y<<endl;
     step-=2;
     found = false;
     point inputpoint = m_point,p=m_point;
+    midroutepoint.push_back(inputpoint);
+    //cout<<inputpoint.x<<" "<<inputpoint.y<<" "<<step<<endl;
     while(step>=0){
-        midroutepoint.push_back(inputpoint);
 
         if(table[p.x+1][p.y].dist==step){
             inputpoint.x = p.x+1;
@@ -285,6 +283,9 @@ void connectmid(){
             inputpoint.y = p.y-1;
         }
         p = inputpoint;
+        //cout<<inputpoint.x<<" "<<inputpoint.y<<" "<<step<<endl;
+        midroutepoint.push_back(inputpoint);
+
         step--;
     }
 
